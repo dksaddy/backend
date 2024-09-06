@@ -3,8 +3,7 @@ const { myError } = require("../middlewares/errorMiddleware");
 const fs = require("fs");
 
 const postQuestion = async (req, res, next) => {
-  const { department, courseName, courseCode, trimester, examType, year } =
-    req.body;
+  const { department, courseName, courseCode, trimester, examType, year } = req.body;
   const file = req.file;
   const uid = req.user.id;
 

@@ -7,7 +7,6 @@ const {
   getFilteredQuestions,
   deleteQuestion,
 } = require("../controllers/questionController");
-const { deletePost } = require("../controllers/feedControllers");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
